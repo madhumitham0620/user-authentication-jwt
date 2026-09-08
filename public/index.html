@@ -4,136 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SecureAuth | Home</title>
+    <title>SecureAuth | Secure Authentication</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
+    <!-- Navigation -->
+    <header class="navbar">
 
         <div class="logo">
-            🔐 SecureAuth
+            <span class="logo-icon">🔐</span>
+            <span>SecureAuth</span>
         </div>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
             <a href="login.html">Login</a>
-            <a href="register.html" class="nav-button">
-                Register
-            </a>
-        </div>
+            <a href="register.html" class="nav-button">Register</a>
+        </nav>
 
-    </nav>
+    </header>
 
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <main>
 
-        <div class="hero-content">
+        <section class="hero">
 
-            <div class="security-icon">
-                🔒
-            </div>
+            <div class="hero-content">
 
-            <h1>
-                Secure User
-                <span>Authentication</span>
-            </h1>
-
-            <p>
-                A secure authentication system powered by
-                Node.js, Express and JSON Web Tokens.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="register.html" class="primary-button">
-                    Create Account
-                </a>
-
-                <a href="login.html" class="secondary-button">
-                    Login
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="features">
-
-        <h2>Powerful Security Features</h2>
-
-        <p class="section-description">
-            Everything you need for secure user authentication.
-        </p>
-
-
-        <div class="feature-container">
-
-            <div class="feature-card">
-
-                <div class="feature-icon">
-                    🔐
+                <div class="security-icon">
+                    🔒
                 </div>
 
-                <h3>Password Encryption</h3>
+                <span class="hero-label">
+                    SECURE • SIMPLE • RELIABLE
+                </span>
+
+                <h1>
+                    Your Security.
+                    <br>
+                    <span>Our Priority.</span>
+                </h1>
 
                 <p>
-                    Passwords are securely hashed using bcrypt
-                    before being stored.
+                    SecureAuth provides a simple and secure way to
+                    create accounts, sign in, and protect your personal data.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="register.html" class="primary-button">
+                        Create Account
+                    </a>
+
+                    <a href="login.html" class="secondary-button">
+                        Sign In
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SECURITY FEATURES
+                </span>
+
+                <h2>
+                    Built with security in mind
+                </h2>
+
+                <p>
+                    Modern authentication features designed to keep
+                    your account safe.
                 </p>
 
             </div>
 
 
-            <div class="feature-card">
+            <div class="feature-container">
 
-                <div class="feature-icon">
-                    🎟️
-                </div>
+                <!-- Feature 1 -->
+                <article class="feature-card">
 
-                <h3>JWT Authentication</h3>
+                    <div class="feature-icon">
+                        🔐
+                    </div>
 
-                <p>
-                    JSON Web Tokens provide secure authentication
-                    for protected routes.
-                </p>
+                    <div>
+                        <h3>Password Security</h3>
+
+                        <p>
+                            Passwords are securely hashed using
+                            bcrypt before being stored.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- Feature 2 -->
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🎟️
+                    </div>
+
+                    <div>
+                        <h3>JWT Authentication</h3>
+
+                        <p>
+                            JSON Web Tokens provide secure access
+                            to authenticated resources.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- Feature 3 -->
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🛡️
+                    </div>
+
+                    <div>
+                        <h3>Protected Routes</h3>
+
+                        <p>
+                            Authentication middleware prevents
+                            unauthorized access to private data.
+                        </p>
+                    </div>
+
+                </article>
 
             </div>
 
+        </section>
 
-            <div class="feature-card">
 
-                <div class="feature-icon">
-                    🛡️
+        <!-- Technology Section -->
+        <section class="technology">
+
+            <div class="technology-content">
+
+                <span class="section-label">
+                    TECHNOLOGY
+                </span>
+
+                <h2>
+                    Powered by modern web technologies
+                </h2>
+
+                <div class="tech-list">
+
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>SQLite</span>
+                    <span>JWT</span>
+                    <span>bcrypt</span>
+
                 </div>
-
-                <h3>Protected Routes</h3>
-
-                <p>
-                    Middleware protects private resources from
-                    unauthorized access.
-                </p>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
 
+    <!-- Footer -->
     <footer>
 
-        <p>
-            © 2026 SecureAuth | User Authentication & JWT
-        </p>
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                🔐 SecureAuth
+            </div>
+
+            <p>
+                Secure User Authentication & JWT
+            </p>
+
+            <p class="copyright">
+                © 2026 SecureAuth. All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
-
 
 </body>
 </html>
