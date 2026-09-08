@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureAuth | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🔐 SecureAuth
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- DASHBOARD -->
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-card">
+
+
+            <div class="dashboard-icon">
+                🛡️
+            </div>
+
+
+            <h1>
+                Welcome to Your Dashboard
+            </h1>
+
+
+            <p class="dashboard-subtitle">
+                Your account is securely authenticated.
+            </p>
+
+
+
+            <!-- AUTHENTICATION STATUS -->
+
+            <div class="status-box">
+
+                <div class="status-icon">
+                    ✅
+                </div>
+
+                <div>
+
+                    <h3>
+                        Authentication Verified
+                    </h3>
+
+                    <p>
+                        Your JWT token has been successfully
+                        verified by the server.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- USER INFORMATION -->
+
+            <div class="user-info">
+
+                <h2>
+                    👤 User Information
+                </h2>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="userName">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="userEmail">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>User ID:</strong>
+                    <span id="userId">Loading...</span>
+                </p>
+
+            </div>
+
+
+
+            <button
+                class="auth-button"
+                onclick="logout()"
+            >
+                Logout
+            </button>
+
+
+            <p id="dashboardMessage"></p>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
